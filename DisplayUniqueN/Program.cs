@@ -10,7 +10,7 @@
             {
                 Console.WriteLine("Enter N: ");
                 var input = Console.ReadLine();
-                if(input == "QUIT")
+                if (input == "QUIT" || input == "")
                 {
                     Console.WriteLine("Shut down!");
                     break;
@@ -20,10 +20,8 @@
                     listN.Add(number);
                 }
             } while (true);
-            foreach(var i in listN.Distinct().ToList())
-            {
+            foreach(var i in listN.Distinct())
                 Console.WriteLine(i);
-            }
         }
     }
 }
