@@ -8,7 +8,7 @@
             do
             {
                 Console.WriteLine("Enter five numbers \n");
-                Console.WriteLine($"Enter number 1: ");
+                Console.WriteLine("Enter number 1: ");
                 var number = int.Parse(Console.ReadLine());
                 listOfN.Add(number);
                 for (int j = 2; j <= 5;)
